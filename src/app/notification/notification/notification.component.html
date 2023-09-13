@@ -1,0 +1,11 @@
+<!-- <div class="box" *ngFor="let el of message | async ">
+  <p>{{el.text}}</p>
+</div> -->
+
+
+
+<div class="notification" [ngClass]="el.type==='error'? 'notification is-danger':'notification is-success'"
+  *ngFor="let el of message | async ">
+  <button class="delete" (click)="ondelete(el.id)"></button>
+  <p>{{el.text}}</p>
+</div>

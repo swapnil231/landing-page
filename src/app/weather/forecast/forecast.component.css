@@ -1,0 +1,18 @@
+:host,.box{
+  /* margin-top: 20px; */
+  width: 8vw;
+  border: 5px solid rgb(255, 255, 255);
+  background-color: rgb(167, 167, 240);
+  margin-left: 10px;
+}
+/* .box:first-child{
+  margin-top: 20px;
+} */
+/* div ,.box{
+  display:inline-block;
+} */
+
+.x{
+  margin-top: 10px;
+}
+

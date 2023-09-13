@@ -1,0 +1,17 @@
+<!-- <p>paginator works!</p> -->
+<nav class="pagination" role="navigation" aria-label="pagination">
+  <!-- <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
+  <a class="pagination-next">Next page</a> -->
+  <ul class="pagination-list">
+    <li *ngFor="let el of pageOptions">
+      <a class="pagination-link" [ngClass]="el===currentPage ?'is-current':' '" aria-label="Page 1" aria-current="page"
+        (click)="onPageClick(el)">{{el}}</a>
+    </li>
+    <!-- <li>
+      <a class="pagination-link" aria-label="Goto page 2">2</a>
+    </li>
+    <li>
+      <a class="pagination-link" aria-label="Goto page 3">3</a>
+    </li> -->
+  </ul>
+</nav>

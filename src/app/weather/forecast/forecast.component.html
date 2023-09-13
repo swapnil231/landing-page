@@ -1,0 +1,11 @@
+<h3 class="title is-6">Weather Forcast</h3>
+<div *ngFor="let el of forecastdata ;first as isFirst" [ngClass]="isFirst?'mt-5':'mt-0'">
+  <div class="box is-flex">
+    <div class="container mx-2">
+      <p class="title is-6  mb-3">{{el.avgtemp_c | number:'2.0-0'}}°C</p>
+      <p style="color: white;">{{el.date | date:'E'}}</p>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,16 @@
+/* .box{
+  width: 20vw;
+margin-left: 1050px;
+
+  background-color: rgba(185, 247, 93, 0.726);
+} */
+:host{
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  width: 300px;
+  z-index: 20;
+
+
+}
